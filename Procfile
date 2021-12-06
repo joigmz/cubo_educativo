@@ -1,1 +1,1 @@
-web: gunicorn cubo_educativo.wsgi
+web: gunicorn cubo_virtual.wsgi
