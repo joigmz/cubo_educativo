@@ -1,1 +1,1 @@
-# cubo_educativo
+# cubo educativo
