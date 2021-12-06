@@ -1,1 +1,1 @@
-web: gunicorn joseizam.wsgi
+web: gunicorn cubo_educativo.wsgi
