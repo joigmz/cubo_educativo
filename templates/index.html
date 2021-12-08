@@ -5,6 +5,40 @@
 
 {% block content %}
 
-<h1>hola</h1>
-<p>{% lorem 3 %}</p>
+<div class="titulo-cubos"><h1> Que hacemos</h1></div>
+<div class="grid">
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w6K0iDsu0TM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="presentacion">
+        <p>{% lorem 2 %}</p>
+    </div>
+</div>
+<br>
+<div class="cubos">
+    <div class="titulo-cubos"><h1> Nuestros cubos</h1></div>
+    <div class="grid-cubos">
+        <div class="contenedor-foto-cubo">
+             <img class="foto-cubo" src="{% static 'img/1.png' %}" alt="">
+             <div class="overlay">My Name is John</div>
+        </div>
+        <div class="contenedor-foto-cubo"> <img class="foto-cubo" src="{% static 'img/2.png' %}" alt=""></div>
+        <div class="contenedor-foto-cubo"> <img class="foto-cubo" src="{% static 'img/3.png' %}" alt=""></div>
+    </div>
+</div>
+
+<br>
+<div class="participa">
+    <div class="titulo-cubos"><h1> ¿Como ayudar?</h1></div>
+    <div class="grid">
+        <div class="texto-participa">
+            <p>{% lorem 2 %}</p>
+        </div>
+        <div class="accion">
+            <button class="slide-g">Donar dinero</button>
+            <button class="slide-r">Donar perifericos</button>
+            <button class="slide-b">Ser voluntario</button>
+        </div>
+    </div>
+</div>
 {% endblock %}

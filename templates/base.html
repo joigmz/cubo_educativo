@@ -9,6 +9,25 @@
         <title>{% block title%}{% endblock %} | Cubo eDucativo</title>
     </head>
     <body>
+        <div class="header">
+            <div class="logo">
+              Cubo eDucativo
+            </div>
+            <div class="menu">
+              <a href="#" class="link">
+                <div class="title">inicio</div>
+                <div class="bar"></div>
+              </a>
+              <a href="#" class="link">
+                <div class="title">item2</div>
+                <div class="bar"></div>
+              </a>
+              <a href="#" class="link">
+                <div class="title">item3</div>
+                <div class="bar"></div>
+              </a>
+            </div>
+        </div>
         <div class="layout">
             {% block content %}{% endblock %}
         </div>
