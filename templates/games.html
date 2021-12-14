@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Games{% endblock %}
+{% block title %}Juegos{% endblock %}
 
 {% block content %}
-<div class="games">
-    <iframe src="https://scratch.mit.edu/projects/606594268/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-</div>
 
+{% for link in links %}
+
+<div class="games">
+    <iframe src= {{ link }}embed allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+{% endfor %}
 {% endblock %}
