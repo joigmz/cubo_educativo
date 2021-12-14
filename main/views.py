@@ -20,7 +20,6 @@ def games(request):
 
     links = [
     'https://scratch.mit.edu/projects/605379639/',
-    'https://scratch.mit.edu/projects/606656097/',
     'https://scratch.mit.edu/projects/604253418/',
     'https://scratch.mit.edu/projects/605454832/',
     'https://scratch.mit.edu/projects/606594268/',
@@ -28,19 +27,15 @@ def games(request):
     'https://scratch.mit.edu/projects/599155722/',
     'https://scratch.mit.edu/projects/545298562/',
     'https://scratch.mit.edu/projects/603006124/',
-    'https://scratch.mit.edu/projects/606594268/',
-    'https://scratch.mit.edu/projects/607119005/',
-    'https://scratch.mit.edu/projects/601726268/',
     'https://scratch.mit.edu/projects/539669007/',
     'https://scratch.mit.edu/projects/604268767/',
-    'https://scratch.mit.edu/projects/606591867/',
     'https://scratch.mit.edu/projects/607610887/',
     'https://scratch.mit.edu/projects/606605328/',
     ]
 
     links = np.array(links)
     context = {
-       'links' : np.random.choice(links, size=3),
+       'links' : np.random.choice(links, size=9, replace=False),
     }
 
     print(links)

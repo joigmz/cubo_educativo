@@ -5,11 +5,13 @@
 
 {% block content %}
 
-{% for link in links %}
 
 <div class="games">
-    <iframe src= {{ link }}embed allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    {% for link in links %}
+        <div class="game">
+            <iframe src= {{ link }}embed allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+    {% endfor %}
 </div>
 
-{% endfor %}
 {% endblock %}
