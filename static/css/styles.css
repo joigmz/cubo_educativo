@@ -63,16 +63,16 @@
 }
 
 .slide-g {
-  --color: #8fc866;
-  --hover: #66c887;
+  --color: #02b159;
+  --hover: #02b159;
 }
 .slide-r {
-  --color: #f03131;
-  --hover: #ed5f5f;
+  --color: #ff8305;
+  --hover: #ff8305;
 }
 .slide-b {
-  --color: #244ced;
-  --hover: #809edf;
+  --color: #03679d;
+  --hover: #03679d;
 }
 
 button {
